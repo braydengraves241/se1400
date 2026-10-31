@@ -1,0 +1,48 @@
+header {
+    grid-column: 1/-1;
+
+    background-color: white;
+    border-bottom: solid 2px #4F2269;
+    filter: drop-shadow(0 0.3rem 0.3rem #a0a0a5);
+
+    color: #4F2269;
+    font-size: 2rem;
+
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+
+}
+
+body {
+    background-color: #e9e7f1;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 0 1fr 1fr 0;
+    gap: 1rem 0.5rem;
+}
+
+.shelf {
+    background-color: #fff;
+    border: #4F2269 solid 2px;
+    height: 4rem;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    filter: drop-shadow(0 0.3rem 0.3rem #a0a0a5);
+
+    color: #4F2269;
+}
+
+.left-column {
+    grid-column: 2;
+}
+
+.right-column {
+    grid-column: 3;
+}
+
+.line{
+    background-color: #4F2269;
+    width: 100%;
+    height: 0.1rem;
+}
