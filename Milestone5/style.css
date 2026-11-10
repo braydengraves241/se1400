@@ -2,7 +2,7 @@ header {
     grid-column: 1/-1;
 
     display: grid;
-    grid-template-columns: 0 1fr 1fr 0;
+    grid-template-columns: 1fr 1fr;
 
     background-color: white;
     border-bottom: solid 2px #4F2269;
@@ -13,7 +13,7 @@ header {
     padding: 0.5rem;
     padding-top: 1.5rem;
 
-    & h1{
+    & h1 {
         font-size: 2rem;
         grid-column: 2;
         padding: 0;
@@ -21,18 +21,16 @@ header {
     }
 
     & nav{
-        grid-column: 3;
+        grid-column: -1;
         margin-bottom: 0;
 
-        & a{
+        & a {
             font-size: 1.5rem;
             margin-bottom: 0;
             padding-left: 0.3rem;
             border-left: #4F2269 solid 3px;
         }
     }
-    
-
 }
 
 body {
@@ -40,8 +38,17 @@ body {
     margin: 0;
 
     display: grid;
-    grid-template-columns: 0 1fr 1fr 0;
+    grid-template-columns: 1fr minmax(700px, 1000px) 1fr;
     gap: 1rem 0.5rem;
+}
+
+article{
+    grid-column: 2;
+
+    display: grid;
+    grid-template-columns: 0 1fr 1fr 0;
+    gap: 0.5rem;
+
 }
 
 .shelf {
@@ -54,7 +61,17 @@ body {
 
     color: #4F2269;
 
-    & p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    & h3{
+        margin: 0;
+        margin-bottom: 0.2rem;
+    }
+
+    & p {
         color: #8677BA;
     }
 }
@@ -67,8 +84,24 @@ body {
     grid-column: 3;
 }
 
-.line{
+.line {
     background-color: #4F2269;
     width: 100%;
     height: 0.1rem;
+}
+
+.span{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.shelf img {
+    background-color: #8677BA;
+    height: 100%;
+    aspect-ratio: 51/76;
+    
+}
+
+@media (){
+
 }
