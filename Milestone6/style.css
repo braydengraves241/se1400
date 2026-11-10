@@ -14,7 +14,7 @@ header {
 
     & h1 {
         font-size: 2rem;
-        grid-column: 2;
+        
         padding: 0;
         margin: 0;
     }
@@ -106,7 +106,10 @@ article{
         grid-column: 1/-1;
 
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
 
+        &h{
+            grid-column: 2;
+        }
     }
 }
